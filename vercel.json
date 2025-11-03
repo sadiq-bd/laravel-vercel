@@ -10,6 +10,9 @@
             "dest": "api/index.php"
         }
     ],
+    "static": {
+        "directory": "public"
+    },
     "env": {
         "APP_ENV": "production",
 	    "APP_KEY": "base64:SOPHFQjbXzV0ut31Di+DmJmQXZ2pU9wnWr1Ws3WdRp4=",
