@@ -5,14 +5,12 @@
         "api/index.php": { "runtime": "vercel-php@0.7.4" }
     },
     "routes": [
+        { "handle": "filesystem" },
         {
             "src": "/(.*)",
             "dest": "api/index.php"
         }
     ],
-    "static": {
-        "directory": "public"
-    },
     "env": {
         "APP_ENV": "production",
 	    "APP_KEY": "base64:SOPHFQjbXzV0ut31Di+DmJmQXZ2pU9wnWr1Ws3WdRp4=",
