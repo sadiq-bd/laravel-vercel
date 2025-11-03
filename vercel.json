@@ -4,9 +4,15 @@
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.7.4" }
     },
+    "builds": [
+        {
+            "src": "public/*",
+            "use": "@vercel/static"
+        }
+    ],
     "routes": [
         {
-            "src": "/assets/(.*)",
+            "src": "/(.*)",
             "dest": "public/$1",
             "check": true
         },
