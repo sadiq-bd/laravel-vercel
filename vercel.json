@@ -2,15 +2,9 @@
     "version": 2,
     "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.7.4" },
-        "public/**": { "runtime": "@vercel/static" }
+        "api/index.php": { "runtime": "vercel-php@0.7.4" }
     },
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "public/$1",
-            "check": true
-        },
         {
             "src": "/(.*)",
             "dest": "api/index.php"
